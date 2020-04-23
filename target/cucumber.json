@@ -1,0 +1,115 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "For searching product user must be registered and login using valid credentials",
+        "description": "",
+        "id": "scenario-outline;for-searching-product-user-must-be-registered-and-login-using-valid-credentials;−;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 111189949400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Raghu has registered in to TestMeApp",
+            "match": {
+              "location": "Test_Steps.raghu_has_registered_in_to_TestMeApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15578471100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Raghu enter Username as \"raghu2241\" and Password as \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "raghu2241",
+                  "offset": 25
+                },
+                {
+                  "val": "123456",
+                  "offset": 53
+                }
+              ],
+              "location": "Test_Steps.raghu_enter_Username_as_and_Password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "The one where the user moves to cart without adding any item in it.",
+        "description": "",
+        "id": "scenario-outline;the-one-where-the-user-moves-to-cart-without-adding-any-item-in-it.;−;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19907028000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user search for particular product and enter product name as \"head\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "head",
+                  "offset": 62
+                }
+              ],
+              "location": "Test_Steps.user_search_for_particular_product_and_enter_product_name_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29538004800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "try to proceed the payment without adding any item in cart",
+            "match": {
+              "location": "Test_Steps.try_to_proceed_the_payment_without_adding_any_item_in_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 299300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "TestMeApp doesn\u0027t display the cart icon",
+            "match": {
+              "location": "Test_Steps.testmeapp_doesn_t_display_the_cart_icon()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "scenario outline",
+    "description": "\r\nDescription: The purpose of this feature is to test the order actions",
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "uri": "addToCart.feature"
+  }
+]
